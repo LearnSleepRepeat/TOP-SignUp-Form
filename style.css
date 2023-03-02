@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "GT Pressura";
+    src: url("fonts/GT-Pressura-Medium-Trial.otf") format("opentype");
+}
+
+html {
+    font-family: "GT Pressura";
+    background-color: #0e0e0e;
+}
+
+.full-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #0e0e0e;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    width: 80%;
+    height: 85%;
+    min-width: 800px;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid green;
+    box-sizing: border-box;
+    background-color: white
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid red;
+    height: 100%;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.bg-image-left {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/las-vegas-background.jpg");
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+    flex-shrink: 1;
+}
+
+.left-icon, .left-footer {
+    color: white;
+}
+
+.left-icon {
+    display: flex;
+    margin-top: 19vh; 
+    height: 140px;
+    background-color: rgba(255,255,255, 0.3);
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.left-footer a {
+    color: white;
+}
+
+.content-top, .content-middle, .content-bottom {
+    min-height: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid black; 
+    box-sizing: border-box;}
+
+.content-middle {
+    flex-shrink: 0;
+    background-color: yellow;
+}
+
