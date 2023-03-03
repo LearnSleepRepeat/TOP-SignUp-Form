@@ -97,11 +97,17 @@ html {
 
 .content-top {
     font-size: 1.75rem;
+    box-shadow: inset 0px -5px 15px -5px rgb(143, 143, 143);
 }
 
 .content-middle {
     flex-shrink: 0;
     background-color: white;
+    box-shadow: 3px 3px 5px -2px black;
+}
+
+.content-bottom {
+    box-shadow: inset 0px 5px 15px -5px rgb(143, 143, 143);
 }
 
 .emphasize {
@@ -118,10 +124,12 @@ input {
     height: 25px;
     border: 1px solid lightgrey;
     border-radius: 5px;
+    outline-color:rgb(56, 223, 0)
 }
 
 table td {
     width: 280px; 
+    font-size: 0.9rem; 
 }
 
 button {
@@ -138,4 +146,10 @@ button {
 
 .content-bottom a {
     color: black;
+}
+
+:focus {
+    border: 2px solid rgb(56, 223, 0);
+    box-shadow: 3px 3px 5px -2px black;
+    box-sizing: border-box;
 }
