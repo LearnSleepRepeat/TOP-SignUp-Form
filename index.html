@@ -52,12 +52,14 @@
         </div></td>
     </tr>
     <tr><td><div class="form5">
-        <label for="password">PASSWORD</label><br>
-        <input type="password" id="password" name="password" required>
+        <label for="password1">PASSWORD</label><br>
+        <input type="password" id="password1" name="password1" required><br>
+        <div class="pw_no_match hidden">*Passwords do not match</div>
     </div></td>
         <td><div class="form6">
             <label for="password2">CONFIRM PASSWORD</label><br>
             <input type="password" id="password2" name="password2" required>
+            <div class="empty_div">.</div>
         </div></td>
     </tr>
 </table>
@@ -66,16 +68,21 @@
         
         </div></div>
         <div class="content-bottom">
-            <button type="submit">Create Account</button>
+            <button type="submit" id="submitButton">Create Account</button>
         </form>
         <br>
         <p>Already have an account? <a href="login.html">Log in</a></p>
-        </div>
+           
+    </div>
     </div>
 
 
+    
 
 </div>
 </div>
+
+<script src="index.js"></script>
+
 </body>
 </html>

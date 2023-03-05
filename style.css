@@ -124,8 +124,22 @@ input {
     height: 25px;
     border: 1px solid lightgrey;
     border-radius: 5px;
-    outline-color:rgb(56, 223, 0)
+    outline-color:rgb(0, 67, 223)
 }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 
 table td {
     width: 280px; 
@@ -149,7 +163,20 @@ button {
 }
 
 :focus {
-    border: 2px solid rgb(56, 223, 0);
+    border: 2px solid rgb(0, 67, 223);
     box-shadow: 3px 3px 5px -2px black;
     box-sizing: border-box;
+}
+
+.pw_no_match {
+    color: red;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.empty_div {
+    visibility: hidden;
+    color: white;
 }
